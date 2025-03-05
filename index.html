@@ -10,12 +10,14 @@
 <body>
     <!--Navbar-->
     <nav class="navbar">
-        <h1 class="logo">Adventure</h1>
+        <h1 class="logo"><i class="fa-solid fa-guitar"></i> GROOVY CATS</h1>
         <ul class="nav-links">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="active"><a href="#"></a>Les&nbsp;cours</li>
+            <li><a href="#"></a>La&nbsp;pédagogie</li>
+            <li><a href="#"></a>A&nbsp;propos</li>
+            <li class="ctn"><a  href="#"></a>Contact</li>
         </ul>
+        <i class="fa-solid fa-bars fa-2x"></i>
     </nav>
     <header>
         <div class="header-content">
@@ -25,5 +27,14 @@
             <a href="#" class="ctn">Voir les détails</a>
         </div>
     </header>
+
+    <script>
+        const menuBtn = document.querySelector('.fa-bars');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () =>{
+            navLinks.classList.toggle('mobile-menu');
+        })
+    </script>
 </body>
 </html>
