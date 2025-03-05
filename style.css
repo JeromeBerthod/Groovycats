@@ -73,7 +73,7 @@ header {
     border-radius: 30px;
     color: whitesmoke;
 }
-.fa-bars {
+.menu-btn {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -84,8 +84,8 @@ header {
 /* Mobile device */
 
 @media only screen and (max-width:850px) {
-    .fa-bars {
-        display: flex;
+    .menu-btn {
+        display: block;
     }
     .navbar {
         padding: 0;
