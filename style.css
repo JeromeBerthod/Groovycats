@@ -40,7 +40,7 @@ ul {
 header {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/IMG_2873.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/IMG_2873-min_plus.jpg);
     background-position: bottom;
     background-size: cover;
     display: flex;
