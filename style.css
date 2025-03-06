@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
+/*@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:wght@200&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');*/
 
 * {
     margin: 0;
@@ -16,6 +16,9 @@ ul {
     color: #fc036b;
     text-decoration: underline;
     font-weight: bold;
+}
+body , html {
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -35,12 +38,11 @@ ul {
 }
 .nav-links li {
     margin: 0 30px;
-
 }
 header {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/IMG_2873-min_plus.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/IMG_2873-min_plus.jpg);
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -56,7 +58,7 @@ header {
     font-size: 4vmin;
 }
 .line {
-    font-size: 150px;
+    width: 150px;
     height: 4px;
     background: #fc036b;
     margin: 10px auto;
@@ -79,6 +81,81 @@ header {
     right: 30px;
     cursor: pointer;
     display: none;
+}
+
+/* Price */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+.img {
+    width: 200px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /*background: cyan;*/
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price .row {
+    margin-top: 30px;
+}
+.price .line {
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+.price .ctn {
+    margin-top: 30px;
+}
+.centered-text {
+    text-align: center;
+}
+
+/* pedagogy */
+.pedagogy {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/guitare.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pedagogy-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pedagogy-content h1 {
+    font-size: 7vmin;
+}
+.pedagogy-content p {
+    color: rgb(221, 221, 221);
+    margin: 10px 0px;
+}
+.pedagogy-content .ctn {
+    margin-top: 40px;
 }
 
 /* Mobile device */

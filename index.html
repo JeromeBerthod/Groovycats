@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <style>
+      body {
+        font-family: 'Crimson Pro', serif;
+        font-size: 20px;
+      }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groovy Cats</title>
@@ -8,18 +16,18 @@
     <script src="https://kit.fontawesome.com/72e93523ab.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--Navbar-->
+    <!-- == Navbar == -->
     <nav class="navbar">
         <h1 class="logo"><i class="fa-solid fa-guitar"></i> GROOVY CATS</h1>
         <ul class="nav-links">
-            <li class="active"><a href="#"></a>Les&nbsp;cours</li>
-            <li><a href="#"></a>La&nbsp;pédagogie</li>
-            <li><a href="#"></a>A&nbsp;propos</li>
+            <li class="active"><a href="#"></a>Cours</li>
+            <li><a href="#"></a>Pédagogie</li>
+            <li><a href="#"></a>Parcours</li>
             <li class="ctn"><a  href="#"></a>Contact</li>
         </ul>
-        <div class="menu-btn"><i class="fa-solid fa-bars fa-2x"></i></div>
-        
+        <div class="menu-btn"><i class="fa-solid fa-bars fa-2x"></i></div> 
     </nav>
+
     <header>
         <div class="header-content">
             <h2>Ecole de Guitare</h2>
@@ -29,6 +37,49 @@
         </div>
     </header>
 
+    <!-- == Tarifs == -->
+    <section class="price">
+        <div class="title">
+            <h1>Tarifs des cours</h1>
+            <div class="line"></div>
+        </div>
+        <p class="centered-text">Nombre d'élèves: 1 - 2 personnes (gratuit pour la deuxième personne)</p>
+        <div class="row">
+            <div class="col">
+                <img class="img" src="images/IMG_2955-min.jpeg" alt="">
+                <h4>Cours enfant</h4>
+                <p>
+                    Durée : 18 semaines / 30 minutes par semaine<br>
+                    Prix: CHF 720.00<br><br>
+                    De 6 à 14 ans, étude du solfège et petites pièces faciles<br><br>
+                    L'enfant doit opter pour une posture saine sans quoi des défauts s'installeront. L'alignement des épaules et la position correcte des mains garantissent une pérénnité.
+                </p>
+                <a href="#" class="ctn">Réserver un cours</a>
+            </div>
+            <div class="col">
+                <img class="img" src="images/happy-smiling-girl-playing-guitar_144627-18214.jpg" alt="">
+                <h4>Cours débutant</h4>
+                <p>
+                    Durée : 18 semaines / 45 minutes par semaine<br>
+                    Prix: CHF 1080.00<br><br>
+                    Dès 15 ans, étude des bases de la technique instrumentale<br><br>
+                    Acquérir un jeu à la guitare n'est pas facile. Passé le stade des quelques accords de base, le choix de la technique de la main droite évolue rapidement vers un jeu aux doigts ou au plectre.
+                </p>
+                <a href="#" class="ctn">Réserver un cours</a>
+            </div>
+        </div>
+    </section>
+     <!-- == pedagogie == -->
+    <section class="pedagogy">
+        <div class="pedagogy-content">
+            <h1>"Si tu peux parler, tu peux jouer."</h1>
+            <p>K. Werner</p>        
+            <div class="line"></div>
+            <p>Basées sur la méthode Alexander, diverses techniques de travail sont explorées puis expérimentées ensuite avec l’instrument.</p>
+            <p>La « maîtrise sans effort », conçu par Kenny Werner, permet une introspection vers son moi intérieur et ouvre la voie vers la guérison des problèmes liés au trac.</p>
+            <a href="#" class="ctn">En apprendre davantage</a>
+        </div>
+    </section>
     <script>
         const menuBtn = document.querySelector('.fa-bars');
         const navLinks = document.querySelector('.nav-links');
