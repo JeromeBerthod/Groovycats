@@ -14,9 +14,10 @@ ul {
 }
 body , html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 h1 {
-    font-size: 7vmin;
+    font-size: 9vmin;
 }
 
 /* Navbar */
@@ -71,6 +72,7 @@ header {
     background: #fc036b;
     border-radius: 30px;
     color: whitesmoke;
+    cursor: pointer;
 }
 .menu-btn {
     position: absolute;
@@ -144,7 +146,11 @@ p {
     color: whitesmoke;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
+}
+.pedagogy-content h4 {
+    font-size: 5vmin;
 }
 .pedagogy-content p {
     color: rgb(221, 221, 221);
@@ -172,6 +178,7 @@ p {
     padding: 0;
     margin: 30px auto;
 }
+
 
 /* footer */
 .footer {
@@ -224,14 +231,14 @@ p {
     .row .col {
         width: 100%;
         margin: 10px auto;
-        padding: 0%;
-    }   
+    }
     .col img {
         max-width: 90%;
     }
     /* pedagogie */
     .pedagogy-content {
         width: 100%;
+        padding: 10px auto;
     }
     .about .col {
         width: 100%;
@@ -257,5 +264,4 @@ img:hover {
 a:hover {
     color:#fc036b;
     cursor: pointer;
-    font-weight: bold;
 }
