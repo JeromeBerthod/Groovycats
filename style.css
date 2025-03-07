@@ -5,20 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
+    color: whitesmoke;
 }
 ul {
     list-style: none;
 }
-.active {
-    color: #fc036b;
-    text-decoration: underline;
-    font-weight: bold;
-}
 body , html {
     overflow-x: hidden;
+}
+h1 {
+    font-size: 7vmin;
 }
 
 /* Navbar */
@@ -55,7 +53,7 @@ header {
     text-align: center;
 }
 .header-content h2 {
-    font-size: 4vmin;
+    font-size: 6vmin;
 }
 .line {
     width: 150px;
@@ -65,7 +63,6 @@ header {
     border-radius: 5px;
 }
 .header-content h1 {
-    font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -90,20 +87,22 @@ section {
 }
 .title {
     text-align: center;
-    font-size: 4vmin;
+    font-size: 5vmin;
     color: #49497e;
 }
-.img {
-    width: 200px;
+.price .img {
+    max-height:100%;
+    max-width:100%;
+    width: 350px;
 }
 .row {
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: space-between;
     /*background: cyan;*/
 }
 .row .col {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,8 +113,8 @@ section {
 .price .line {
     margin-bottom: 30px;
 }
-h4 {
-    font-size: 3vmin;
+h3 {
+    font-size: 5vmin;
     color: #484872;
     margin: 20px auto;
 }
@@ -140,15 +139,12 @@ p {
     background-repeat: no-repeat;
 }
 .pedagogy-content {
-    width: 60%;
+    width: 100%;
     padding: 50px;
     color: whitesmoke;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-.pedagogy-content h1 {
-    font-size: 7vmin;
 }
 .pedagogy-content p {
     color: rgb(221, 221, 221);
@@ -156,6 +152,40 @@ p {
 }
 .pedagogy-content .ctn {
     margin-top: 40px;
+}
+
+/* parcours */
+.content-col {
+    width: 40%;
+}
+.image-col {
+    width: 60%;
+}
+.about img {
+    max-height:100%;
+    max-width:100%;
+}
+.content-col h1 {
+    color: #484872;
+}
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
 }
 
 /* Mobile device */
@@ -187,4 +217,45 @@ p {
     .nav-links li {
         margin: 30px auto;
     }
+    /* cours */
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        width: 100%;
+        margin: 10px auto;
+        padding: 0%;
+    }   
+    .col img {
+        max-width: 90%;
+    }
+    /* pedagogie */
+    .pedagogy-content {
+        width: 100%;
+    }
+    .about .col {
+        width: 100%;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* Animations */
+
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.304);
+}
+a:hover {
+    color:#fc036b;
+    cursor: pointer;
+    font-weight: bold;
 }
