@@ -146,7 +146,7 @@ p {
     color: whitesmoke;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
 }
 .pedagogy-content h4 {
@@ -179,6 +179,33 @@ p {
     margin: 30px auto;
 }
 
+/* formulaire */
+form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px auto;
+}
+.list-item {
+    line-height: 4;
+    color:#484872;
+}
+.place  {
+    margin-left: 62px;
+}
+.phone{
+    margin-left: 56px
+}
+.gmail {
+    margin-left: 53px;
+}
 
 /* footer */
 .footer {
@@ -235,13 +262,26 @@ p {
     .col img {
         max-width: 90%;
     }
+    .pedagogy-content h1 {
+        text-align: center;
+    }
     /* pedagogie */
-    .pedagogy-content {
-        width: 100%;
-        padding: 10px auto;
+    .pedagogy-content p {
+        justify-content: left;
+        padding: 0;
     }
     .about .col {
         width: 100%;
+    }
+    /* formulaire */
+    .contact  {
+        text-align: center;
+    }
+    .list-item {
+        line-height: 2;
+    }
+    .place, .phone, .gmail {
+        margin-left: 5px;
     }
     .footer {
         padding: 10px;

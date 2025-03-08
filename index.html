@@ -14,6 +14,13 @@
     <title>Groovy Cats</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/72e93523ab.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({publicKey: "uY6bTr2dxvlNT3Ql6",});
+        })();
+    </script>
 </head>
 <body>
     <!-- == Navbar == -->
@@ -23,7 +30,7 @@
             <li><a href="#cours">Nos Tarifs</a></li>
             <li><a href="#pedagogie">Autres Cours</a></li>
             <li><a href="#parcours">A&nbsp;Propos</a></li>
-            <li class="ctn"><a  href="#"></a>Contactez-Nous</li>
+            <li class="ctn"><a href="#contact">Contactez-Nous</a></li>
         </ul>
         <div class="menu-btn"><i class="fa-solid fa-bars fa-2x"></i></div> 
     </nav>
@@ -54,7 +61,7 @@
                     De 6 à 14 ans, étude du solfège et petites pièces faciles<br><br>
                     L'enfant doit opter pour une posture saine sans quoi des défauts s'installeront. L'alignement des épaules et la position correcte des mains garantissent une pérénnité.
                 </p>
-                <a href="#" class="ctn">Réserver un Cours</a>
+                <a href="#contact" class="ctn">Réserver un Cours</a>
             </div>
             <div class="col">
                 <img class="img" src="images/happy-smiling-girl-playing-guitar_144627-18214.jpg" alt="">
@@ -65,7 +72,7 @@
                     Dès 15 ans, étude des bases de la technique instrumentale<br><br>
                     Acquérir un jeu à la guitare n'est pas facile. Passé le stade des quelques accords de base, le choix de la technique de la main droite évolue rapidement vers un jeu aux doigts ou au plectre.
                 </p>
-                <a href="#" class="ctn">Réserver un Cours</a>
+                <a href="#contact" class="ctn">Réserver un Cours</a>
             </div>
         </div>
     </section>
@@ -76,9 +83,9 @@
             <p>K. Werner</p>        
             <h1>Autres Cours Disponibles</h1>
             <div class="line"></div>
-            <p>Basées sur la méthode Alexander, diverses techniques de travail sont explorées puis expérimentées ensuite avec l’instrument.</p>
+            <p>Le travail d'une pièce de musique et sa mémorisation reposent avant tout sur un travail conscient et rigoureux. Basées sur la méthode Alexander, diverses techniques sont explorées puis expérimentées ensuite avec l’instrument.</p>
             <p>La « maîtrise sans effort », conçu par Kenny Werner, permet une introspection vers son moi intérieur et ouvre notamment la voie vers la guérison des problèmes liés au trac.</p>
-            <a href="#" class="ctn">En Apprendre Davantage</a>
+            <a href="#contact" class="ctn">En Apprendre Davantage</a>
         </div>
     </section>
     <!-- == parcours == -->
@@ -88,7 +95,7 @@
             <h1>A Propos de Moi</h1>
             <div class="line"></div>
             <p>Je m'appelle Jérôme Berthod et je suis originaire du Valais. En 1991, je suis parti en Californie pour étudier la guitare au MIT de Los Angeles. De retour après une année, je me suis engagé dans une formation musicale à Lausanne où j'ai obtenu un certificat de guitare, puis un diplôme en pédagogie musicale de l'EJMA Lausanne. En parallèle à ces études, j'ai participé à de nombreux projets musicaux en Suisse Romande et j'ai accumulé plus de 15 ans d'expérience dans l'enseignement de la guitare au sein des écoles de musique de la région. Actuellement, je suis en charge de la formation musicale des candidats visant à obtenir une maturité fédérale à l'école Buissonnets-Montani à Sion.</p>
-            <a href="#" class="ctn">Me Contacter</a>
+            <a href="#contact" class="ctn">Me Contacter</a>
         </div>
         <div class="col image-col">
             <img class="img" src="images/IMG_4388-min.JPG" alt="">
@@ -97,21 +104,34 @@
     </section>
      <!-- == formulaire == -->
     <section id="contact" class="contact">
+        <div class="title">
+            <h1>Restons en Contact</h1>
+            <div class="line"></div>
+        </div>
         <div class="row">
             <div class="col">
-                <h1>Restons en Contact</h1>
-                <div class="line"></div>
+                <form>
+                    Nom:<br>
+                    <input type="text" name="name" id="name" placeholder="Votre Nom" required><br>
+                    Email:<br>
+                    <input type="email" name="email" id="email" placeholder="Votre Email" required><br>
+                    Message:<br>
+                    <textarea name="message" id="message" rows="5" placeholder="Votre Message" required></textarea><br>
+                    <button type="button" class="ctn" onclick="sendMail()">Envoyer</button>
+                </form>
             </div>
             <div class="col">
-                
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker"></i><span class="contact-text place">Rue de Pré-Fleuri 2a, 1950 Sion</span></li>
+                    <li class="list-item"><i class="fa fa-phone"></i><span class="contact-text phone">(+41)77 426 60 67</span></li>
+                    <li class="list-item"><i class="fa fa-envelope"></i><span class="contact-text gmail">jerome.berthod@hotmail.com</span></li>
+                </ul>
             </div>
         </div>
     </section>
 
-
     <!-- == footer == -->
     <section class="footer">
-        <p>Rue de Pré-Fleuri 2a, 1950 Sion | Portable: +41774266067 | Email: jerome.berthod@hotmail.com</p>
         <p>Copyright &copy; 2025 Ecole de guitare Groovy Cats</p>
     </section>
 
