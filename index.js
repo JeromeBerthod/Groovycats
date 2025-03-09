@@ -15,6 +15,7 @@ function sendMail(){
 
     if (!emailIsValid(document.getElementById("email").value)) {
         alert("Entrez un email valide svp");
+        document.getElementById("email").value = "";
         document.getElementById("email").focus();
     }
 
