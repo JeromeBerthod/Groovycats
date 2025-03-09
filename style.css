@@ -175,8 +175,8 @@ p {
     color: #484872;
 }
 .content-col p {
-    padding: 0;
-    margin: 30px auto;
+    padding: 5px auto;
+    margin: 15px auto;
 }
 
 /* formulaire */
